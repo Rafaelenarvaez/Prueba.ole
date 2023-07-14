@@ -72,6 +72,7 @@
                 .boton:hover {
                     background: hsl(150, 100%, 66%);
                     box-shadow: 0 0 10px hsl(150, 100%, 66%), 0 0 40px hsl(150, 100%, 66%), 0 0 80px hsl(150, 100%, 66%);
+                    cursor: pointer;
                 }
             }
         }
@@ -170,6 +171,7 @@
             height: 50%;
 
             .text{
+                font-size: 25px;
                 p{
                     margin: 0;
                 }
