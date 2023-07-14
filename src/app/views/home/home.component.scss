@@ -1,0 +1,224 @@
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+
+    .caja {
+        display: flex;
+        align-items: center;
+        flex-flow: column;
+        background-color: hsl(217, 19%, 24%);
+        width: 37%;
+        height: 47%;
+        border-radius: 15px;
+
+        .title {
+            p {
+                font-family: Manrope;
+                font-size: 16px;
+                color: hsl(150, 100%, 66%);
+                margin-top: 50px;
+                font-weight: bold;
+                letter-spacing: 5px;
+            }
+        }
+
+        .text {
+            font-weight: bold;
+            font-size: 28px;
+            width: 90%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            color: hsl(193, 38%, 86%);
+            font-family: Manrope;
+            margin: 0;
+        }
+
+
+        .futter {
+            position: fixed;
+            top: 60%;
+
+            .svg1 {
+                margin-bottom: 15px;
+            }
+
+            .svg2 {
+                display: none;
+            }
+
+            .boto {
+                position: relative;
+                display: flex;
+                justify-content: center;
+
+                .boton {
+                    position: absolute;
+                    top: 19px;
+                    width: 69px;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    height: 66px;
+                    background: hsl(150, 100%, 66%);
+                    border-radius: 45px;
+
+
+                }
+
+                .boton:hover {
+                    background: hsl(150, 100%, 66%);
+                    box-shadow: 0 0 10px hsl(150, 100%, 66%), 0 0 40px hsl(150, 100%, 66%), 0 0 80px hsl(150, 100%, 66%);
+                }
+            }
+        }
+
+
+    }
+
+
+}
+
+@media screen and (min-width: 1440px) {
+    .container {
+        .text{
+            p{
+                margin: 0;
+            }
+        }
+        .caja {
+            .futter {
+                top: 62%;
+            }
+        }
+    }
+}
+
+@media (max-width: 1200px) and (min-width: 992px) {
+    .container {
+        .caja {
+            .text{
+                p{
+                    margin: 0;
+                }
+            }
+            .svg1 {
+                display: none;
+            }
+
+            .svg2 {
+                display: flex !important;
+            }
+        }
+    }
+}
+
+@media (max-width: 992px) and (min-width: 768px) {
+    .container {
+        .caja {
+            width: 50%;
+
+            .text{
+                p{
+                    margin: 0;
+                }
+            }
+            .svg1 {
+                display: none;
+            }
+
+            .svg2 {
+                display: flex !important;
+            }
+        }
+    }
+}
+
+@media (max-width: 768px) and (min-width: 576px) {
+    .container {
+        .caja {
+            width: 50%;
+            height: 46%;
+
+            .text{
+                p{
+                    margin: 0;
+                }
+            }
+            .futter {
+                top: 64%;
+
+                .svg1 {
+                    display: none;
+                }
+
+                .svg2 {
+                    display: flex !important;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 576px) and (min-width: 375px) {
+    .container {
+        .caja {
+            width: 90%;
+            height: 50%;
+
+            .text{
+                p{
+                    margin: 0;
+                }
+            }
+
+            .futter {
+                top: 65%;
+
+                .svg1 {
+                    display: none;
+                }
+
+                .svg2 {
+                    display: flex !important;
+                }
+            }
+
+        }
+    }
+}
+
+@media screen and (max-width: 375px) {
+
+
+    .container {
+        .caja {
+            width: 90%;
+            height: 50%;
+
+            .text{
+                p{
+                    margin: 0;
+                }
+            }
+
+            .futter {
+                top: 65%;
+
+                .svg1 {
+                    display: none;
+                }
+
+                .svg2 {
+                    display: flex !important;
+                    margin-top: -10px;
+                    margin-bottom: 10px;
+                }
+            }
+
+        }
+    }
+}

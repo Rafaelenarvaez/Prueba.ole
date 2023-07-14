@@ -1,1 +1,9 @@
-/* You can add global styles to this file, and also import other style files */
+
+@font-face {
+    font-family: Manrope;
+    src: url("./assets/fonts/ManropeVariableFontwght.ttf");
+}
+
+body{
+    background-color:  hsl(218, 23%, 16%);
+}
